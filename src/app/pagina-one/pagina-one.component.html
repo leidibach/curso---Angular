@@ -1,0 +1,23 @@
+<p>pagina-one works!</p>
+
+<button (click)="Adicionar()"> Add </button>
+<button (click)="Subtracao()"> Sub </button>
+<button (click)="Subtrair_param()"> Parametro </button>
+<h5>{{ flag }}</h5>
+<div>
+
+  {{ flag }}
+
+</div>
+
+<div>
+
+  {{ flag  * 10 }}
+
+</div>
+
+<div *ngIf="flag === 15; else naoEIgual">{{ flag  * 10 }} </div>
+
+<ng-template #naoEIgual>
+  Não é igual a 15
+</ng-template>

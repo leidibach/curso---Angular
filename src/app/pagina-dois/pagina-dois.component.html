@@ -1,0 +1,9 @@
+<ng-container *ngFor="let elemento of lista">
+  <app-hero [name]="elemento.name" [descricao]="elemento.descricao"></app-hero>
+
+</ng-container>
+
+<input #name />
+<input #descricao />
+<button (click)="adicionar(name.value,descricao.value)">Adicionar</button>
+
